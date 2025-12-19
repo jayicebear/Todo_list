@@ -34,3 +34,31 @@ npm install
 
 # 개발 서버 실행
 npm run dev
+
+
+toggleTodo(2) 실행
+        │
+        ▼
+todos.map(todo)
+        │
+        ├── todo = {id:1} → id == 2? ❌ 그대로 유지
+        │
+        ├── todo = {id:2} → id == 2? ✔ 토글 적용
+        │          { ...todo, completed: !completed }
+        │           즉 → completed: true → false 로 변경
+        │
+        └── todo = {id:3} → id == 2? ❌ 그대로 유지
+        ▼
+새로운 todos 배열 생성
+
+[
+  { id: 1, text: "공부하기", completed: false },
+  { id: 2, text: "운동하기", completed: false }, ← 토글됨!
+  { id: 3, text: "청소하기", completed: false }
+]
+        │
+        ▼
+setTodos(...) 로 상태 업데이트
+        │
+        ▼
+React가 화면 다시 렌더링 (UI 업데이트!)
