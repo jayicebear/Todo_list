@@ -34,8 +34,10 @@ npm install
 
 # 개발 서버 실행
 npm run dev
+```
 
 ## 업데이트 방식
+
 ```bash
 toggleTodo(2) 실행
         │
