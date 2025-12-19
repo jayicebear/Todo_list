@@ -1,0 +1,36 @@
+# ✅ Todo List
+
+심플하고 예쁜 React Todo List 앱이에요!  
+할 일 추가, 완료 토글, 삭제까지 기본 기능 모두 구현했답니다.
+
+## 📸 데모 스크린샷
+
+![Todo List 화면]<img width="1942" height="1233" alt="스크린샷 2025-12-19 105818" src="https://github.com/user-attachments/assets/baa9d5a5-d6d3-4ea9-8a15-36cf30a563f0" />
+ 
+
+## ✨ 특징
+
+- 깔끔하고 반응형 UI
+- 할 일 추가 / 완료 토글 / 삭제 기능
+- 완료된 할 일 개수 실시간 카운트
+- 상태 관리: React `useState` 활용
+- 불변성 유지하며 상태 업데이트 (함수형 업데이트 추천)
+
+## 🛠️ 기술 스택
+
+- **Frontend**: React 
+- **스타일**: CSS 
+- **배포**: Vercel, Netlify 등 정적 호스팅 추천
+
+## 🚀 시작하기
+
+```bash
+# 저장소 클론
+git clone https://github.com/jayicebear/react-todo-list.git
+cd react-todo-list
+
+# 의존성 설치
+npm install
+
+# 개발 서버 실행
+npm run dev
