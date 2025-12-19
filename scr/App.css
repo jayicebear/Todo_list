@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.todo-container {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/* 입력 영역 */
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.input-area input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.input-area button {
+  padding: 15px 25px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-area button:hover {
+  background: #5568d3;
+}
+
+/* Todo 리스트 */
+.todo-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.todo-item:hover {
+  transform: translateX(5px);
+  background: #e9ecef;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.todo-content input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todo-content span {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.todo-content span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-btn {
+  padding: 8px 15px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: #ee5a52;
+}
+
+/* 통계 */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.stats p {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+  .todo-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .input-area {
+    flex-direction: column;
+  }
+
+  .input-area button {
+    width: 100%;
+  }
+}
