@@ -5,7 +5,7 @@
 
 ## 📸 데모 스크린샷
 
-![Todo List 화면]<img width="1942" height="1233" alt="스크린샷 2025-12-19 105818" src="https://github.com/user-attachments/assets/baa9d5a5-d6d3-4ea9-8a15-36cf30a563f0" />
+<img width="1942" height="1233" alt="스크린샷 2025-12-19 105818" src="https://github.com/user-attachments/assets/baa9d5a5-d6d3-4ea9-8a15-36cf30a563f0" />
  
 
 ## ✨ 특징
